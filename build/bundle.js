@@ -79,7 +79,8 @@
 				return _react2.default.createElement(
 					'div',
 					null,
-					'This is the REACT APP!'
+					'This is the REACT APP!',
+					_react2.default.createElement('div', { style: { width: 300, height: 600, background: 'red' } })
 				);
 			}
 		}]);
