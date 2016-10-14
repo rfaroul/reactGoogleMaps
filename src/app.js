@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Map from './components/Map'
 import Places from './components/Places'
+import superagent from 'superagent' //makes api call from foursquare. uses promises
 
 //this is the App component
 //think of components as HTML tags, roughly speaking
