@@ -80,11 +80,22 @@
 		}
 	
 		_createClass(App, [{
-			key: 'render',
+			key: 'componentDidMount',
 			//ideally, component should only do one thing
+			//after invoke a class, React expects a render method and triggers a lifecycle that can be hooked into lifecycle methods
+			//as soon as render method is called, componentDidMount function is called. this is where you access the DOM and manipulate/fetch data
+			value: function componentDidMount() {
+				//should see this in console. successfully overrides the lifecycle method
+				console.log("component did mount");
+			}
+	
 			//spit out HTML here
 			//the only way to call the render method is when state changes
+	
+		}, {
+			key: 'render',
 			value: function render() {
+	
 				//pass location variable as center property to the map (below in the div)
 				var location = { //Times Square
 					lat: 40.7575285,
