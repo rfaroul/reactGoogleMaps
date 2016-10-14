@@ -45,4 +45,4 @@ class Map extends Component {
 }
 
 export default Map
-//there's only one entry point. instead of reactDOM we're exporting this so we can take this code/component and put it inside other components. nesting components. map component is being imported inside app.js
+//there's only one entry point. instead of reactDOM we're exporting this so we can take this code (aka component) and put it inside other components. nesting components. map component is being imported inside app.js

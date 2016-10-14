@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Map from './components/Map'
+import Places from './components/Places'
 
 //this is the App component
 //think of components as HTML tags, roughly speaking
@@ -36,7 +37,9 @@ class App extends Component { //ideally, component should only do one thing
 				This is the REACT APP!
 				<div style={{width:300, height:600, background:'red'}}>
 					<Map center={location} markers={markers} />
+					<Places />
 				</div>
+					
 			</div>
 		)
 
